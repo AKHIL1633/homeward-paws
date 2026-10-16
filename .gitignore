@@ -1,0 +1,40 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+.env
+.env.local
+
+# Build and dependency output
+node_modules/
+.next/
+dist/
+coverage/
+
+# Runtime uploads
+backend/uploads/
+
+# Local reusable design handbook (copied between projects, never published here)
+.visual-mission-playbook/
+
+# Local project context and agent instructions
+.agents/
+adopt-a-buddy-place_repo.md
+professional_summary.md
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "project": {
+    "name": "adopt-a-buddy-place",
+    "productType": "India-first pet adoption marketplace",
+    "stack": ["Next.js 16", "React 19", "Tailwind CSS 4", "GSAP"]
+  },
+  "sources": {
+    "tokens": ["frontend/app/globals.css"],
+    "components": ["frontend/components"],
+    "assets": ["frontend/public/art", "frontend/public/audio"],
+    "instructions": ["docs/design"]
+  },
+  "design": {
+    "colorMode": "light editorial",
+    "colors": {
+      "paper": "#F8F0DC",
+      "ink": "#172C55",
+      "blue": "#154A91",
+      "tomato": "#D94B39",
+      "marigold": "#F4BD2E",
+      "leaf": "#2E7352"
+    },
+    "typography": { "display": "Fraunces", "body": "DM Sans" },
+    "spacing": { "base": "4px", "section": "clamp(5rem, 9vw, 9rem)" },
+    "radius": { "small": "12px", "medium": "22px", "large": "38px" },
+    "shadows": { "graphic": "hard navy offset", "depth": "soft navy ambient" },
+    "motion": { "engine": "GSAP", "signature": "The Walk Home", "reducedMotion": "static complete scenes" },
+    "density": "editorial spacious"
+  },
+  "components": {
+    "installed": ["GSAP ScrollTrigger", "GSAP MotionPath", "GSAP DrawSVG", "Howler"],
+    "preferredPrimitives": ["semantic HTML", "Lucide icons", "Next Image"],
+    "patterns": ["chapter labels", "hard-offset borders", "asymmetric image frames", "short emotional copy"]
+  },
+  "constraints": {
+    "must": ["adoption-first navigation", "real listing data", "visible focus", "reduced motion", "mobile story alternative", "explicit failures"],
+    "avoid": ["generic glass cards", "purple gradients", "decorative emoji icons", "scroll jacking", "invented adoption claims", "generated art presented as a real pet"]
+  },
+  "decisions": [
+    "Use a neighbourhood storybook identity with cobalt ink, tomato, marigold, leaf green, and warm paper.",
+    "Use generated tactile artwork as editorial illustration and real uploaded photography for actual listings.",
+    "Use one reversible desktop scroll timeline and static natural-flow scenes on mobile or reduced motion.",
+    "Start sound off and load the local original loop only after the visitor opts in."
+  ],
+  "evidence": [
+    "21st inspiration: Immersive Scroll Gallery, Alice Scroll Story, Hero Carousel",
+    "Reference research: illoca.com, loreobsessed.com, arresteddevelopmentmusic.com",
+    "Awwwards criteria: design 40%, usability 30%, creativity 20%, content 10%"
+  ]
+}

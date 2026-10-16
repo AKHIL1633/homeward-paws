@@ -1,0 +1,18 @@
+{
+  "name": "adopt-a-buddy-place",
+  "version": "2.0.0",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "predev": "node scripts/check-dev-ports.mjs",
+    "dev": "concurrently --kill-others --names frontend,backend --prefix-colors cyan,green \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "seed": "npm --prefix backend run seed",
+    "build": "npm run build:frontend",
+    "build:frontend": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "10.0.3"
+  }
+}
